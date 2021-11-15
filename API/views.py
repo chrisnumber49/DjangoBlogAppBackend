@@ -6,6 +6,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 from django.contrib.auth.models import User
 from rest_framework.filters import SearchFilter
+from rest_framework import status
 # Create your views here.
 
 
@@ -71,6 +72,18 @@ class PostViewset(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+    def update(self, request, pk=None):
+        response = {'message': 'Update function is not offered in this path.'}
+        return Response(response, status=status.HTTP_403_FORBIDDEN)
+
+    def partial_update(self, request, pk=None):
+        response = {'message': 'Update function is not offered in this path.'}
+        return Response(response, status=status.HTTP_403_FORBIDDEN)
+
+    def destroy(self, request, pk=None):
+        response = {'message': 'Delete function is not offered in this path.'}
+        return Response(response, status=status.HTTP_403_FORBIDDEN)
 
 # the viewset class for comments
 

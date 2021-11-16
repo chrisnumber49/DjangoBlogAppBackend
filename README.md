@@ -1,6 +1,6 @@
 # Blog App Django Backend
 
-An weather application that built with Django, Bootstrap, python, CSS and the...
+An REST API built with Django, Django Rest Framework and python for the blog application.
 
 Github link of Blog App React Frontend: https://github.com/chrisnumber49/React-Blog-App-Frontend
 
@@ -10,9 +10,9 @@ Github link of Blog App React Frontend: https://github.com/chrisnumber49/React-B
 
 ## Installation and Setup Instructions
 
-Clone down this repository. You will need `Django` installed globally on your machine.  
+Clone down this repository. You will need `Django` and `Django Rest Framework` installed globally on your machine.  
 
-Installation: `pip install Django`
+Installation: `pip install Django`, `pip install djangorestframework`
 
 Creating new migrations: `python manage.py makemigrations`
 

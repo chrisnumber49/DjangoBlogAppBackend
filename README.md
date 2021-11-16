@@ -1,6 +1,6 @@
 # Blog App Django Backend
 
-An REST API built with Django, Django Rest Framework and python for the blog application.
+A REST API built with Django, Django Rest Framework and python for the blog application.
 
 Github link of Blog App React Frontend: https://github.com/chrisnumber49/React-Blog-App-Frontend
 

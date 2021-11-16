@@ -12,7 +12,7 @@ Github link of Blog App React Frontend: https://github.com/chrisnumber49/React-B
 
 Clone down this repository. You will need `Django` and `Django Rest Framework` installed globally on your machine.  
 
-Installation: `pip install Django`, `pip install djangorestframework`
+Installation: `pip install Django` and `pip install djangorestframework`
 
 Creating new migrations: `python manage.py makemigrations`
 

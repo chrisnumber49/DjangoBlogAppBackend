@@ -29,4 +29,4 @@ This is my first side project of integrating full stack development with React f
 
 I started this project by using the command `django-admin startproject` to create the boilerplate of project, then create new app with command `python manage.py startapp`, two dependencies were installed, `pillow` is for for saving and serving static files to the client, and `django-cors-headers` is to allow resources to be accessed on other domains.
 
-In the backend REST API of this side project, I learned about...
+In the backend REST API of this side project, I learned about the concept of various components that make up REST framework, understanding each wrapper that Django Rest Framework provides for views including function-based API views, class-based API views, GenericAPIView, viewsets, GenericViewSet and ModelViewSet, and lastly knowing the Authentication and Permissions to restrict who can access the data.

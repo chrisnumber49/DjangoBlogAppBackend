@@ -5,9 +5,9 @@ A REST API built with Django, Django Rest Framework and python for the blog appl
 Github link of Blog App React Frontend: https://github.com/chrisnumber49/React-Blog-App-Frontend
 
 ## Project Screen Shots
-<img src="https://github.com/chrisnumber49/DjangoBlogAppBackend/blob/master/screen%20shot/demo1.PNG" width="600" > 
-<img src="https://github.com/chrisnumber49/DjangoBlogAppBackend/blob/master/screen%20shot/demo2.PNG" width="600" > 
-<img src="https://github.com/chrisnumber49/DjangoBlogAppBackend/blob/master/screen%20shot/demo3.PNG" width="600" > 
+<img src="https://github.com/chrisnumber49/DjangoBlogAppBackend/blob/master/screen%20shot/demo1.PNG" width="700" > 
+<img src="https://github.com/chrisnumber49/DjangoBlogAppBackend/blob/master/screen%20shot/demo2.PNG" width="700" > 
+<img src="https://github.com/chrisnumber49/DjangoBlogAppBackend/blob/master/screen%20shot/demo3.PNG" width="700" > 
 
 ## Installation and Setup Instructions
 

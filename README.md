@@ -20,7 +20,7 @@ Creating new migrations: `python manage.py makemigrations`
 Applying migrations: `python manage.py migrate`
 
 To Start Server: `python manage.py runserver`  
-
+ 
 To Visit App: `localhost:8000/`
 
 ## Reflection 

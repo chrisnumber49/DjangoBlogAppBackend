@@ -17,19 +17,22 @@ class CommentSerializer(serializers.ModelSerializer):
 class PostSerializer(serializers.ModelSerializer):
     # related_name="comments" in the Comments Model (Nested relationships)
     postComments = CommentSerializer(many=True, read_only=True)
+    # to show the specific detail of ForeignKey User (method 2)
+    author = serializers.ReadOnlyField(source='author.username')
 
     class Meta:
         model = Posts
         fields = ['id', 'title', 'description',
                   'cover', 'author', 'postComments']
-        # to show the detail of ForeignKey User
-        depth = 1
+        # to show all the detail of ForeignKey User (method 1)
+        # depth = 1
 
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['username']  # will only show username in page
+        # fields = '__all__'
 
         # this will make password invisible
         extra_kwargs = {'password': {

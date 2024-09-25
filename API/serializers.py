@@ -31,7 +31,7 @@ class PostSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['username']  # will only show username in page
+        fields = ['id', 'username', 'password']
         # fields = '__all__'
 
         # this will make password invisible

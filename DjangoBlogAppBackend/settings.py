@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-    'cloudinary',
-    'cloudinary_storage',
+    # 'cloudinary',
+    # 'cloudinary_storage',
 ]
 
 
@@ -62,19 +62,19 @@ MIDDLEWARE = [
 ]
 
 # to save image into cloudinary
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'he4npynk2',
-    'API_KEY': '386696449822636',
-    'API_SECRET': 'vKBtN4wJ5qWCjKZ99DUi9z9wJRg',
-}
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'he4npynk2',
+#     'API_KEY': '386696449822636',
+#     'API_SECRET': 'vKBtN4wJ5qWCjKZ99DUi9z9wJRg',
+# }
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # CORS allow list
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-# ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
+# CORS_ALLOW_ALL_ORIGINS = True
 
 
 ROOT_URLCONF = 'DjangoBlogAppBackend.urls'
@@ -108,8 +108,8 @@ DATABASES = {
     }
 }
 # for Postgres on Heroku
-DATABASES['default'] = dj_database_url.config(
-    conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(
+#     conn_max_age=600, ssl_require=True)
 
 
 # Password validation
